@@ -1,0 +1,137 @@
+[
+    {
+        "tool_id": 1,
+        "name": "set_unit",
+        "desc": "设置数轴单位长度（每个大格代表的数值），示例：set unit 2"
+    },
+    {
+        "tool_id": 2,
+        "name": "set grid",
+        "desc": "设置网格密度（像素/单位长度），示例：set grid 5"
+    },
+    {
+        "tool_id": 3,
+        "name": "set minor",
+        "desc": "设置每个大格内的小网格细分数，限定整数2~10，示例：set minor 4"
+    },
+    {
+        "tool_id": 4,
+        "name": "set pointsize",
+        "desc": "设置坐标点显示的半径大小，限定整数1~20，示例：set pointsize 6"
+    },
+    {
+        "tool_id": 5,
+        "name": "set precision",
+        "desc": "设置函数曲线采样步长，范围0.001~0.1，数值越小曲线越精细，示例：set precision 0.005"
+    },
+    {
+        "tool_id": 6,
+        "name": "set decimals",
+        "desc": "设置坐标轴标签、坐标值显示小数位数，整数0~13，示例：set decimals 3"
+    },
+    {
+        "tool_id": 7,
+        "name": "set majorcolor",
+        "desc": "设置主网格线颜色，传入十六进制色值#RRGGBB，示例：set majorcolor #ff0000"
+    },
+    {
+        "tool_id": 8,
+        "name": "set minorcolor",
+        "desc": "设置细分网格线颜色，传入十六进制色值#RRGGBB，示例：set minorcolor #00ff00"
+    },
+    {
+        "tool_id": 9,
+        "name": "show grid",
+        "desc": "显示或隐藏主网格，参数仅支持on/off，示例：show grid off"
+    },
+    {
+        "tool_id": 10,
+        "name": "show minor",
+        "desc": "显示或隐藏细分小网格，参数仅支持on/off，示例：show minor on"
+    },
+    {
+        "tool_id": 11,
+        "name": "show xaxis",
+        "desc": "显示或隐藏X坐标轴，参数仅支持on/off，示例：show xaxis off"
+    },
+    {
+        "tool_id": 12,
+        "name": "show yaxis",
+        "desc": "显示或隐藏Y坐标轴，参数仅支持on/off，示例：show yaxis on"
+    },
+    {
+        "tool_id": 13,
+        "name": "reset view",
+        "desc": "将画布视图重置为系统默认状态，无入参"
+    },
+    {
+        "tool_id": 14,
+        "name": "add function",
+        "desc": "添加函数曲线，支持显式y=f(x)、隐式二元方程，支持+-*/^括号，示例：add function y=sin(x)、add function x^2+y^2=1"
+    },
+    {
+        "tool_id": 15,
+        "name": "add point",
+        "desc": "添加坐标点。x、y 支持四种写法，自动识别：① 纯数值（如 3 或 -2.5，固定坐标）；② 不含参数的代数式（如 1+sqrt(2)，直接计算后存为固定值）；③ 含参数的代数式（如 2*a+1，引用已创建的参数，参数变化时坐标自动重算）；④ y 还可直接填函数 ID（如 function_1，坐标点 Y 绑定该函数，随函数计算）。x 不支持函数 ID。label 可选大写单个字母标签。示例：add point 3 2、add point \"2*a+1\" \"b-1\" P、add point 0 function_1 O"
+    },
+    {
+        "tool_id": 16,
+        "name": "add param",
+        "desc": "创建可拖动调节参数滑块，参数名小写字母，配置最小值、最大值、步长、初始值，示例：add param a -5 5 0.1 1"
+    },
+    {
+        "tool_id": 17,
+        "name": "add segment",
+        "desc": "连接两个已有坐标点绘制线段，传入两点大写标签，示例：add segment A B"
+    },
+    {
+        "tool_id": 18,
+        "name": "add line",
+        "desc": "绘制经过两个坐标点的无限直线，传入两点大写标签，示例：add line A B"
+    },
+    {
+        "tool_id": 19,
+        "name": "add ray",
+        "desc": "绘制射线，从pointA出发经过pointB无限延伸，传入两点大写标签，示例：add ray A B"
+    },
+    {
+        "tool_id": 20,
+        "name": "delete item",
+        "desc": "删除画布内指定项目，自动处理依赖，传入项目唯一ID，示例：delete fx_1"
+    },
+    {
+        "tool_id": 21,
+        "name": "hide item",
+        "desc": "隐藏指定项目，项目保留在数据列表仅画布不渲染，示例：hide xy_1"
+    },
+    {
+        "tool_id": 22,
+        "name": "showitem item",
+        "desc": "恢复显示被隐藏的项目，传入项目ID，示例：showitem xy_1"
+    },
+    {
+        "tool_id": 23,
+        "name": "setcolor item",
+        "desc": "修改指定项目的绘制颜色，项目ID+十六进制色值，示例：setcolor fx_1 #00aaff"
+    },
+    {
+        "tool_id": 24,
+        "name": "setlabel item",
+        "desc": "修改坐标点、连线的展示标签，单个大写字母，示例：setlabel xy_1 C"
+    },
+    {
+        "tool_id": 25,
+        "name": "clear all",
+        "desc": "一键清空画布内所有绘制项目，无二次确认，谨慎调用，无入参"
+    },
+    {
+        "tool_id": 26,
+        "name": "get_project_data",
+        "desc": "获取函数绘制器当前全部项目数据（所有函数表达式、坐标点、参数滑块、线段/直线/射线及其数值与隐藏状态），以 JSON 文本形式返回，用于 AI 判断当前画布内容"
+    },
+    {
+        "tool_id": 27,
+        "name": "get_knowledge_base",
+        "desc": "获取函数绘制器知识库内容（使用说明与绘图技巧）。注意：知识库功能尚在建设中，当前返回内容可能为空"
+    }
+]
