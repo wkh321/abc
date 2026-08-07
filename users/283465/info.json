@@ -4,7 +4,7 @@
   "password": "Wkh03213",
   "ip": "39.148.160.0",
   "blacklist": [],
-  "avatar": "users/283465/private/avatar.png",
+  "avatar": "avatars/283465.png",
   "registeredAt": 1786036085685,
   "lastLoginAt": 1786080705543,
   "devices": [
@@ -39,5 +39,5 @@
       "action": "login"
     }
   ],
-  "avatarUpdated": 1786080788101
+  "avatarUpdated": 1786082044861
 }
