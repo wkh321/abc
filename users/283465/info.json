@@ -3,7 +3,9 @@
   "name": "wkh",
   "password": "Wkh03213",
   "ip": "39.148.160.0",
-  "blacklist": [],
+  "blacklist": [
+    "111.111.111"
+  ],
   "avatar": "users/283465/private/avatar.png",
   "registeredAt": 1786036085685,
   "lastLoginAt": 1786119406468,
