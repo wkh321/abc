@@ -2,7 +2,7 @@
   "id": "hsjsq_wkh_ysgws_08856012",
   "name": "一只白羊",
   "password": "123456",
-  "avatar": "",
+  "avatar": "avatars/283465.png",
   "role": "user",
   "registeredAt": 1786273215993,
   "lastLoginAt": 1786273215993,
@@ -14,5 +14,6 @@
     "knowledgePoints": 0,
     "mistakes": 0,
     "sharedWorks": 0
-  }
+  },
+  "avatarUpdated": 1786273244485
 }
