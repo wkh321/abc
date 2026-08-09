@@ -8,8 +8,14 @@
   ],
   "avatar": "users/283465/private/avatar.png",
   "registeredAt": 1786036085685,
-  "lastLoginAt": 1786243977648,
+  "lastLoginAt": 1786276002057,
   "devices": [
+    {
+      "ip": "39.148.160.0",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0",
+      "time": 1786276002057,
+      "action": "login"
+    },
     {
       "ip": "39.148.160.0",
       "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
@@ -62,18 +68,6 @@
       "ip": "39.148.160.0",
       "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
       "time": 1786037843097,
-      "action": "login"
-    },
-    {
-      "ip": "39.148.160.0",
-      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
-      "time": 1786036602149,
-      "action": "login"
-    },
-    {
-      "ip": "39.148.160.0",
-      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
-      "time": 1786036145623,
       "action": "login"
     }
   ],
