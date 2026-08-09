@@ -5,15 +5,23 @@
   "avatar": "avatars/283465.png",
   "role": "user",
   "registeredAt": 1786273215993,
-  "lastLoginAt": 1786273215993,
+  "lastLoginAt": 1786273336228,
   "whitelist": [],
   "blacklist": [],
-  "devices": [],
+  "devices": [
+    {
+      "ip": "39.148.160.0",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+      "time": 1786273336228,
+      "action": "login"
+    }
+  ],
   "stats": {
     "uploadedQuestions": 0,
     "knowledgePoints": 0,
     "mistakes": 0,
     "sharedWorks": 0
   },
-  "avatarUpdated": 1786273244485
+  "avatarUpdated": 1786273244485,
+  "ip": "39.148.160.0"
 }
