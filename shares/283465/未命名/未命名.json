@@ -1,0 +1,72 @@
+{
+  "version": 2,
+  "settings": {
+    "gridUnitLength": 5,
+    "gridPixelSize": 3,
+    "minorGridSteps": 5,
+    "pointSize": 4,
+    "renderPrecision": 0.01,
+    "decimalPlaces": 2,
+    "showMinorGrid": true,
+    "hideXAxis": false,
+    "hideYAxis": false,
+    "showGrid": true,
+    "pointStyle": "dot"
+  },
+  "items": [
+    {
+      "id": "fx_1",
+      "type": "function",
+      "expr": "y = -x^2 + 10",
+      "color": "#6366f1",
+      "hidden": false,
+      "errorMsg": ""
+    },
+    {
+      "id": "fx_2",
+      "type": "function",
+      "expr": "y = -x",
+      "color": "#22c55e",
+      "hidden": false,
+      "errorMsg": ""
+    },
+    {
+      "id": "xy_1",
+      "type": "point",
+      "label": "A",
+      "color": "#3b82f6",
+      "hidden": false,
+      "xMode": "fixed",
+      "xFixed": -2,
+      "x": -2,
+      "yMode": "fixed",
+      "yFixed": 6,
+      "y": 6,
+      "xErr": null,
+      "yErr": null,
+      "errorMsg": null
+    },
+    {
+      "id": "pa_1",
+      "type": "param",
+      "name": "a",
+      "min": -5,
+      "max": 5,
+      "step": 0.1,
+      "value": 0,
+      "hidden": false
+    }
+  ],
+  "idSeq": {
+    "function": 2,
+    "point": 1,
+    "segment": 0,
+    "line": 0,
+    "ray": 0,
+    "param": 1
+  },
+  "_id": "prj_msiizls44p8ljs",
+  "name": "未命名",
+  "savedAt": 1786081803606,
+  "savedBy": "283465"
+}
