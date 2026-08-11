@@ -1,8 +1,8 @@
 {
   "name": "未命名",
   "id": "未命名",
-  "shared": false,
-  "updatedAt": 1786418191156,
+  "shared": true,
+  "updatedAt": 1786418456825,
   "desc": "",
   "category": "一次函数",
   "tags": [],
