@@ -8,8 +8,14 @@
   ],
   "avatar": "users/283465/private/avatar.png",
   "registeredAt": 1786036085685,
-  "lastLoginAt": 1786336446303,
+  "lastLoginAt": 1786425816759,
   "devices": [
+    {
+      "ip": "39.148.160.0",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+      "time": 1786425816759,
+      "action": "login"
+    },
     {
       "ip": "39.148.160.0",
       "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
