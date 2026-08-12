@@ -603,12 +603,12 @@
     },
     "hidden": {
       "canvas": false,
-      "question": false,
-      "analysis": false
+      "question": true,
+      "analysis": true
     }
   },
   "_id": "未命名5",
   "name": "未命名5",
-  "savedAt": 1786535425227,
+  "savedAt": 1786536796183,
   "savedBy": "hsjsq_wkh_ysgws_08856012"
 }
