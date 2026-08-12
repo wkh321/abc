@@ -1,7 +1,7 @@
 {
   "version": 3,
   "settings": {
-    "gridUnitLength": 5,
+    "gridUnitLength": 1,
     "gridPixelSize": 3,
     "minorGridSteps": 5,
     "pointSize": 7,
@@ -20,7 +20,8 @@
       "expr": "y=1/x",
       "color": "#6366f1",
       "hidden": false,
-      "errorMsg": ""
+      "errorMsg": "",
+      "folderId": null
     },
     {
       "id": "fx_3",
@@ -28,7 +29,8 @@
       "expr": "y=-(1/x)",
       "color": "#f59e0b",
       "hidden": false,
-      "errorMsg": ""
+      "errorMsg": "",
+      "folderId": null
     },
     {
       "id": "pa_2",
@@ -38,7 +40,8 @@
       "max": 10,
       "step": 0.1,
       "value": -1.7,
-      "hidden": false
+      "hidden": false,
+      "folderId": null
     },
     {
       "id": "xy_8",
@@ -50,7 +53,8 @@
       "label": "A",
       "xErr": null,
       "yErr": null,
-      "errorMsg": null
+      "errorMsg": null,
+      "folderId": null
     },
     {
       "id": "xy_9",
@@ -67,7 +71,8 @@
       "xParamExpr": "n",
       "_errNotified": false,
       "yMode": "func",
-      "yFuncId": "fx_3"
+      "yFuncId": "fx_3",
+      "folderId": null
     },
     {
       "id": "xy_10",
@@ -84,7 +89,8 @@
       "_errNotified": false,
       "yFuncId": "fx_3",
       "xMode": "param",
-      "xParamExpr": "-n"
+      "xParamExpr": "-n",
+      "folderId": null
     },
     {
       "id": "xy_11",
@@ -101,7 +107,8 @@
       "_errNotified": false,
       "yFuncId": "fx_2",
       "xMode": "param",
-      "xParamExpr": "-1*n"
+      "xParamExpr": "-1*n",
+      "folderId": null
     },
     {
       "id": "xy_12",
@@ -118,7 +125,8 @@
       "_errNotified": false,
       "yFuncId": "fx_2",
       "xMode": "param",
-      "xParamExpr": "n"
+      "xParamExpr": "n",
+      "folderId": null
     },
     {
       "id": "line_4",
@@ -140,7 +148,8 @@
         "_errNotified": false,
         "yFuncId": "fx_2",
         "xMode": "param",
-        "xParamExpr": "n"
+        "xParamExpr": "n",
+        "folderId": null
       },
       "pointB": {
         "id": "xy_11",
@@ -157,7 +166,8 @@
         "_errNotified": false,
         "yFuncId": "fx_2",
         "xMode": "param",
-        "xParamExpr": "-1*n"
+        "xParamExpr": "-1*n",
+        "folderId": null
       },
       "color": "#16a34a",
       "hidden": false,
@@ -168,7 +178,8 @@
       "k": 0.34602076124567477,
       "b": 0,
       "xMin": -1.7,
-      "xMax": 1.7
+      "xMax": 1.7,
+      "folderId": null
     },
     {
       "id": "line_5",
@@ -190,7 +201,8 @@
         "_errNotified": false,
         "yFuncId": "fx_3",
         "xMode": "param",
-        "xParamExpr": "-n"
+        "xParamExpr": "-n",
+        "folderId": null
       },
       "pointB": {
         "id": "xy_11",
@@ -207,7 +219,8 @@
         "_errNotified": false,
         "yFuncId": "fx_2",
         "xMode": "param",
-        "xParamExpr": "-1*n"
+        "xParamExpr": "-1*n",
+        "folderId": null
       },
       "color": "#16a34a",
       "hidden": false,
@@ -218,7 +231,8 @@
       "k": null,
       "b": 1.7,
       "xMin": 1.7,
-      "xMax": 1.7
+      "xMax": 1.7,
+      "folderId": null
     },
     {
       "id": "line_6",
@@ -240,7 +254,8 @@
         "_errNotified": false,
         "yFuncId": "fx_3",
         "xMode": "param",
-        "xParamExpr": "-n"
+        "xParamExpr": "-n",
+        "folderId": null
       },
       "pointB": {
         "id": "xy_12",
@@ -257,7 +272,8 @@
         "_errNotified": false,
         "yFuncId": "fx_2",
         "xMode": "param",
-        "xParamExpr": "n"
+        "xParamExpr": "n",
+        "folderId": null
       },
       "color": "#16a34a",
       "hidden": false,
@@ -268,7 +284,8 @@
       "k": 0,
       "b": -0.5882352941176471,
       "xMin": -1.7,
-      "xMax": 1.7
+      "xMax": 1.7,
+      "folderId": null
     },
     {
       "id": "line_7",
@@ -290,7 +307,8 @@
         "_errNotified": false,
         "yFuncId": "fx_2",
         "xMode": "param",
-        "xParamExpr": "n"
+        "xParamExpr": "n",
+        "folderId": null
       },
       "pointB": {
         "id": "xy_9",
@@ -307,7 +325,8 @@
         "xParamExpr": "n",
         "_errNotified": false,
         "yMode": "func",
-        "yFuncId": "fx_3"
+        "yFuncId": "fx_3",
+        "folderId": null
       },
       "color": "#16a34a",
       "hidden": false,
@@ -318,7 +337,8 @@
       "k": null,
       "b": -1.7,
       "xMin": -1.7,
-      "xMax": -1.7
+      "xMax": -1.7,
+      "folderId": null
     },
     {
       "id": "line_8",
@@ -340,7 +360,8 @@
         "_errNotified": false,
         "yFuncId": "fx_2",
         "xMode": "param",
-        "xParamExpr": "-1*n"
+        "xParamExpr": "-1*n",
+        "folderId": null
       },
       "pointB": {
         "id": "xy_9",
@@ -357,7 +378,8 @@
         "xParamExpr": "n",
         "_errNotified": false,
         "yMode": "func",
-        "yFuncId": "fx_3"
+        "yFuncId": "fx_3",
+        "folderId": null
       },
       "color": "#16a34a",
       "hidden": false,
@@ -368,7 +390,8 @@
       "k": 0,
       "b": 0.5882352941176471,
       "xMin": -1.7,
-      "xMax": 1.7
+      "xMax": 1.7,
+      "folderId": null
     },
     {
       "id": "xy_15",
@@ -383,7 +406,8 @@
       "errorMsg": null,
       "yMode": "param",
       "yParamExpr": "1/n",
-      "_errNotified": false
+      "_errNotified": false,
+      "folderId": null
     },
     {
       "id": "xy_16",
@@ -398,7 +422,8 @@
       "errorMsg": null,
       "xMode": "param",
       "xParamExpr": "n",
-      "_errNotified": false
+      "_errNotified": false,
+      "folderId": null
     },
     {
       "id": "line_10",
@@ -418,7 +443,8 @@
         "errorMsg": null,
         "xMode": "param",
         "xParamExpr": "n",
-        "_errNotified": false
+        "_errNotified": false,
+        "folderId": null
       },
       "pointB": {
         "id": "xy_15",
@@ -433,7 +459,8 @@
         "errorMsg": null,
         "yMode": "param",
         "yParamExpr": "1/n",
-        "_errNotified": false
+        "_errNotified": false,
+        "folderId": null
       },
       "color": "#16a34a",
       "hidden": false,
@@ -444,7 +471,8 @@
       "k": -0.34602076124567477,
       "b": -0.5882352941176471,
       "xMin": -1.7,
-      "xMax": 0
+      "xMax": 0,
+      "folderId": null
     },
     {
       "id": "xy_17",
@@ -460,7 +488,8 @@
       "xMode": "param",
       "xParamExpr": "-n",
       "_errNotified": false,
-      "yFixed": 0
+      "yFixed": 0,
+      "folderId": null
     },
     {
       "id": "xy_18",
@@ -479,7 +508,8 @@
       "yMode": "param",
       "yFuncId": "fx_3",
       "yParamExpr": "-1/n",
-      "xFixed": 0
+      "xFixed": 0,
+      "folderId": null
     },
     {
       "id": "line_11",
@@ -500,7 +530,8 @@
         "xMode": "param",
         "xParamExpr": "-n",
         "_errNotified": false,
-        "yFixed": 0
+        "yFixed": 0,
+        "folderId": null
       },
       "pointB": {
         "id": "xy_18",
@@ -519,7 +550,8 @@
         "yMode": "param",
         "yFuncId": "fx_3",
         "yParamExpr": "-1/n",
-        "xFixed": 0
+        "xFixed": 0,
+        "folderId": null
       },
       "color": "#16a34a",
       "hidden": false,
@@ -530,7 +562,8 @@
       "k": -0.34602076124567477,
       "b": 0.5882352941176471,
       "xMin": 0,
-      "xMax": 1.7
+      "xMax": 1.7,
+      "folderId": null
     }
   ],
   "idSeq": {
@@ -551,21 +584,21 @@
         "y": 48,
         "w": 1070,
         "h": 922,
-        "z": 409
+        "z": 449
       },
       "question": {
         "x": 1071,
         "y": 48,
-        "w": 400,
+        "w": 401,
         "h": 920,
-        "z": 410
+        "z": 443
       },
       "analysis": {
-        "x": 1472,
+        "x": 1470,
         "y": 48,
-        "w": 450,
-        "h": 922,
-        "z": 406
+        "w": 463,
+        "h": 884,
+        "z": 436
       }
     },
     "hidden": {
@@ -576,6 +609,6 @@
   },
   "_id": "未命名5",
   "name": "未命名5",
-  "savedAt": 1786522090811,
+  "savedAt": 1786535425227,
   "savedBy": "hsjsq_wkh_ysgws_08856012"
 }
