@@ -5,10 +5,16 @@
   "avatar": "avatars/283465.png",
   "role": "user",
   "registeredAt": 1786273215993,
-  "lastLoginAt": 1786510560865,
+  "lastLoginAt": 1786518320898,
   "whitelist": [],
   "blacklist": [],
   "devices": [
+    {
+      "ip": "39.148.160.0",
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+      "time": 1786518320898,
+      "action": "login"
+    },
     {
       "ip": "39.148.160.0",
       "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
