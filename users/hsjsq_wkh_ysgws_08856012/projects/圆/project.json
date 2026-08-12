@@ -1,0 +1,117 @@
+{
+  "version": 3,
+  "settings": {
+    "gridUnitLength": 5,
+    "gridPixelSize": 3,
+    "minorGridSteps": 5,
+    "pointSize": 4,
+    "renderPrecision": 0.01,
+    "decimalPlaces": 2,
+    "showMinorGrid": true,
+    "hideXAxis": false,
+    "hideYAxis": false,
+    "showGrid": true,
+    "pointStyle": "dot"
+  },
+  "items": [
+    {
+      "id": "yuan_1",
+      "type": "circle",
+      "color": "#6366f1",
+      "hidden": false,
+      "cxMode": "fixed",
+      "cxFixed": 0,
+      "cxParamExpr": "",
+      "cyMode": "fixed",
+      "cyFixed": 0,
+      "cyParamExpr": "",
+      "rMode": "fixed",
+      "rFixed": 10,
+      "rParamExpr": "",
+      "rotate": -307,
+      "cx": 0,
+      "cy": 0,
+      "radius": 10,
+      "errorMsg": null
+    },
+    {
+      "id": "xy_1",
+      "type": "point",
+      "x": 10,
+      "y": 0,
+      "color": "#22c55e",
+      "hidden": false,
+      "label": "A",
+      "xErr": null,
+      "yErr": null,
+      "errorMsg": null,
+      "yMode": "func",
+      "_errNotified": false
+    },
+    {
+      "id": "yuan_2",
+      "type": "circle",
+      "color": "#ef4444",
+      "hidden": false,
+      "cxMode": "fixed",
+      "cxFixed": 10,
+      "cxParamExpr": "",
+      "cyMode": "fixed",
+      "cyFixed": 0,
+      "cyParamExpr": "",
+      "rMode": "fixed",
+      "rFixed": 9,
+      "rParamExpr": "",
+      "rotate": 117,
+      "cx": 10,
+      "cy": 0,
+      "radius": 9,
+      "errorMsg": null
+    }
+  ],
+  "idSeq": {
+    "function": 0,
+    "point": 2,
+    "segment": 0,
+    "line": 0,
+    "ray": 0,
+    "param": 0,
+    "circle": 2
+  },
+  "folders": [],
+  "regionLayout": {
+    "version": 2,
+    "windows": {
+      "canvas": {
+        "x": 0,
+        "y": 48,
+        "w": 1920,
+        "h": 887,
+        "z": 525
+      },
+      "question": {
+        "x": 1071,
+        "y": 48,
+        "w": 401,
+        "h": 920,
+        "z": 443
+      },
+      "analysis": {
+        "x": 1470,
+        "y": 48,
+        "w": 463,
+        "h": 884,
+        "z": 436
+      }
+    },
+    "hidden": {
+      "canvas": false,
+      "question": true,
+      "analysis": true
+    }
+  },
+  "_id": "prj_msq1u5bbf86gai",
+  "name": "圆",
+  "savedAt": 1786536744989,
+  "savedBy": "hsjsq_wkh_ysgws_08856012"
+}
