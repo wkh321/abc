@@ -1,0 +1,73 @@
+{
+  "version": 3,
+  "settings": {
+    "gridUnitLength": 5,
+    "gridPixelSize": 3,
+    "minorGridSteps": 5,
+    "pointSize": 4,
+    "renderPrecision": 0.01,
+    "decimalPlaces": 2,
+    "showMinorGrid": true,
+    "hideXAxis": false,
+    "hideYAxis": false,
+    "showGrid": true,
+    "pointStyle": "dot"
+  },
+  "items": [
+    {
+      "id": "fx_1",
+      "type": "function",
+      "expr": "",
+      "color": "#6366f1",
+      "hidden": false,
+      "errorMsg": "表达式为空"
+    }
+  ],
+  "idSeq": {
+    "function": 1,
+    "point": 0,
+    "segment": 0,
+    "line": 0,
+    "ray": 0,
+    "param": 0
+  },
+  "folders": [],
+  "regionLayout": {
+    "version": 2,
+    "windows": {
+      "canvas": {
+        "x": 0,
+        "y": 48,
+        "w": 1920,
+        "h": 887,
+        "z": 347
+      },
+      "question": {
+        "x": 382,
+        "y": 48,
+        "w": 607,
+        "h": 887,
+        "z": 322
+      },
+      "analysis": {
+        "x": 1330,
+        "y": 51,
+        "w": 450,
+        "h": 887,
+        "z": 317
+      }
+    },
+    "hidden": {
+      "canvas": false,
+      "question": true,
+      "analysis": true
+    }
+  },
+  "_id": "prj_mspm9oohmdwxzm",
+  "name": "未命名5",
+  "savedAt": 1786510801701,
+  "savedBy": "hsjsq_wkh_ysgws_08856012",
+  "id": "未命名5",
+  "shared": true,
+  "updatedAt": 1786512687855
+}
