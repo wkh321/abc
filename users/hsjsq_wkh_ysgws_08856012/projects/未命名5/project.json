@@ -584,14 +584,14 @@
         "y": 48,
         "w": 1070,
         "h": 922,
-        "z": 449
+        "z": 452
       },
       "question": {
         "x": 1071,
         "y": 48,
         "w": 401,
         "h": 920,
-        "z": 443
+        "z": 450
       },
       "analysis": {
         "x": 1470,
@@ -603,12 +603,12 @@
     },
     "hidden": {
       "canvas": false,
-      "question": true,
-      "analysis": true
+      "question": false,
+      "analysis": false
     }
   },
   "_id": "未命名5",
   "name": "未命名5",
-  "savedAt": 1786536796183,
+  "savedAt": 1786595339083,
   "savedBy": "hsjsq_wkh_ysgws_08856012"
 }
