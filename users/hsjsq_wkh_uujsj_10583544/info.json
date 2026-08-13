@@ -1,0 +1,20 @@
+{
+  "id": "hsjsq_wkh_uujsj_10583544",
+  "name": "111",
+  "password": "123456",
+  "avatar": "",
+  "role": "user",
+  "email": "",
+  "emailBoundAt": 0,
+  "registeredAt": 1786615183519,
+  "lastLoginAt": 1786615183519,
+  "whitelist": [],
+  "blacklist": [],
+  "devices": [],
+  "stats": {
+    "uploadedQuestions": 0,
+    "knowledgePoints": 0,
+    "mistakes": 0,
+    "sharedWorks": 0
+  }
+}
