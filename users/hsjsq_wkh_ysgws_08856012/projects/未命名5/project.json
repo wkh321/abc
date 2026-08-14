@@ -24,7 +24,8 @@
       "label": "A",
       "xErr": null,
       "yErr": null,
-      "errorMsg": null
+      "errorMsg": null,
+      "folderId": null
     },
     {
       "id": "xy_2",
@@ -58,7 +59,8 @@
       "label": "C",
       "xErr": null,
       "yErr": null,
-      "errorMsg": null
+      "errorMsg": null,
+      "folderId": null
     },
     {
       "id": "xy_4",
@@ -88,7 +90,8 @@
       "label": "E",
       "xErr": null,
       "yErr": null,
-      "errorMsg": null
+      "errorMsg": null,
+      "folderId": null
     },
     {
       "id": "xy_6",
@@ -149,7 +152,8 @@
         "label": "C",
         "xErr": null,
         "yErr": null,
-        "errorMsg": null
+        "errorMsg": null,
+        "folderId": null
       },
       "color": "#16a34a",
       "hidden": false,
@@ -160,7 +164,8 @@
       "k": null,
       "b": -15,
       "xMin": -15,
-      "xMax": -15
+      "xMax": -15,
+      "folderId": null
     },
     {
       "id": "line_2",
@@ -177,7 +182,8 @@
         "label": "C",
         "xErr": null,
         "yErr": null,
-        "errorMsg": null
+        "errorMsg": null,
+        "folderId": null
       },
       "pointB": {
         "id": "xy_1",
@@ -189,7 +195,8 @@
         "label": "A",
         "xErr": null,
         "yErr": null,
-        "errorMsg": null
+        "errorMsg": null,
+        "folderId": null
       },
       "color": "#16a34a",
       "hidden": false,
@@ -200,7 +207,8 @@
       "k": 0,
       "b": 0,
       "xMin": -15,
-      "xMax": 0
+      "xMax": 0,
+      "folderId": null
     },
     {
       "id": "line_3",
@@ -230,7 +238,8 @@
         "label": "E",
         "xErr": null,
         "yErr": null,
-        "errorMsg": null
+        "errorMsg": null,
+        "folderId": null
       },
       "color": "#16a34a",
       "hidden": false,
@@ -241,7 +250,8 @@
       "k": 0,
       "b": 15,
       "xMin": -15,
-      "xMax": 0
+      "xMax": 0,
+      "folderId": null
     },
     {
       "id": "line_4",
@@ -258,7 +268,8 @@
         "label": "E",
         "xErr": null,
         "yErr": null,
-        "errorMsg": null
+        "errorMsg": null,
+        "folderId": null
       },
       "pointB": {
         "id": "xy_1",
@@ -270,7 +281,8 @@
         "label": "A",
         "xErr": null,
         "yErr": null,
-        "errorMsg": null
+        "errorMsg": null,
+        "folderId": null
       },
       "color": "#16a34a",
       "hidden": false,
@@ -281,7 +293,8 @@
       "k": null,
       "b": 0,
       "xMin": 0,
-      "xMax": 0
+      "xMax": 0,
+      "folderId": null
     },
     {
       "id": "line_5",
@@ -322,9 +335,9 @@
       "color": "#16a34a",
       "hidden": false,
       "label": "e",
-      "midX": -12.5,
-      "midY": 15,
-      "length": 5,
+      "midX": -17.85987507511544,
+      "midY": 12.922179133146106,
+      "length": 7.07,
       "k": 0.7265425280053616,
       "b": 25.898137920080423,
       "xMin": -20.719750150230876,
@@ -379,9 +392,9 @@
       "color": "#16a34a",
       "hidden": false,
       "label": "f",
-      "midX": -10,
-      "midY": 12.5,
-      "length": 5,
+      "midX": -15,
+      "midY": 15,
+      "length": 14.140000000000002,
       "k": 0.7265425280053616,
       "b": 25.898137920080423,
       "xMin": -20.719750150230876,
@@ -427,9 +440,9 @@
       "color": "#16a34a",
       "hidden": false,
       "label": "g",
-      "midX": -15,
-      "midY": 12.5,
-      "length": 5,
+      "midX": -12.922179133146104,
+      "midY": 12.140124924884564,
+      "length": 7.070000000000001,
       "k": -1.37638192047117,
       "b": -5.645728807067549,
       "xMin": -15,
@@ -484,9 +497,9 @@
       "color": "#16a34a",
       "hidden": false,
       "label": "h",
-      "midX": -12.5,
-      "midY": 10,
-      "length": 5,
+      "midX": -10.062304058030666,
+      "midY": 14.217945791738458,
+      "length": 9.998489885977781,
       "k": 6.313751514675075,
       "b": 77.74883327925072,
       "xMin": -10.844358266292208,
@@ -530,14 +543,15 @@
         "label": "A",
         "xErr": null,
         "yErr": null,
-        "errorMsg": null
+        "errorMsg": null,
+        "folderId": null
       },
       "color": "#16a34a",
       "hidden": false,
       "label": "i",
-      "midX": -5,
-      "midY": 5,
-      "length": 14.142135623730951,
+      "midX": -4.640124924884561,
+      "midY": 9.577820866853894,
+      "length": 21.285244830734445,
       "k": -2.0641299581157666,
       "b": 0,
       "xMin": -9.280249849769122,
@@ -562,7 +576,8 @@
       "cx": -15,
       "cy": 15,
       "radius": 7.07,
-      "errorMsg": null
+      "errorMsg": null,
+      "folderId": null
     },
     {
       "id": "pa_1",
@@ -591,7 +606,8 @@
       "yErr": null,
       "errorMsg": null,
       "_errNotified": false,
-      "yFixed": 4.02
+      "yFixed": 4.02,
+      "folderId": null
     },
     {
       "id": "line_12",
@@ -614,7 +630,8 @@
         "yErr": null,
         "errorMsg": null,
         "_errNotified": false,
-        "yFixed": 4.02
+        "yFixed": 4.02,
+        "folderId": null
       },
       "pointB": {
         "id": "xy_3",
@@ -626,18 +643,20 @@
         "label": "C",
         "xErr": null,
         "yErr": null,
-        "errorMsg": null
+        "errorMsg": null,
+        "folderId": null
       },
       "color": "#16a34a",
       "hidden": false,
       "label": "k",
-      "midX": -12,
-      "midY": 2.01,
-      "length": 7.222215726492805,
+      "midX": -10,
+      "midY": 5.160324895289417,
+      "length": 14.37065802598388,
       "k": 1.0320649790578833,
       "b": 15.48097468586825,
       "xMin": -15,
-      "xMax": -5
+      "xMax": -5,
+      "folderId": null
     },
     {
       "id": "line_13",
@@ -660,7 +679,8 @@
         "yErr": null,
         "errorMsg": null,
         "_errNotified": false,
-        "yFixed": 4.02
+        "yFixed": 4.02,
+        "folderId": null
       },
       "pointB": {
         "id": "xy_5",
@@ -672,18 +692,20 @@
         "label": "E",
         "xErr": null,
         "yErr": null,
-        "errorMsg": null
+        "errorMsg": null,
+        "folderId": null
       },
       "color": "#16a34a",
       "hidden": false,
       "label": "l",
-      "midX": -4.5,
-      "midY": 9.51,
-      "length": 14.197196906431918,
+      "midX": -2.5,
+      "midY": 12.660324895289417,
+      "length": 6.84808866636596,
       "k": 0.9358700418842332,
       "b": 15,
       "xMin": -5,
-      "xMax": 0
+      "xMax": 0,
+      "folderId": null
     },
     {
       "id": "line3_1",
@@ -706,7 +728,8 @@
         "yErr": null,
         "errorMsg": null,
         "_errNotified": false,
-        "yFixed": 4.02
+        "yFixed": 4.02,
+        "folderId": null
       },
       "pointB": {
         "id": "xy_7",
@@ -724,13 +747,14 @@
       "color": "#ca8a04",
       "hidden": false,
       "label": "m",
-      "midX": -12,
-      "midY": 9.51,
-      "length": 12.512409839835012,
+      "midX": -10,
+      "midY": 12.660324895289417,
+      "length": 11.04066657328306,
       "k": -0.4679350209421166,
       "b": 7.980974685868251,
       "xMin": null,
-      "xMax": null
+      "xMax": null,
+      "folderId": null
     }
   ],
   "idSeq": {
@@ -784,7 +808,7 @@
         "y": 48,
         "w": 1920,
         "h": 887,
-        "z": 762
+        "z": 771
       },
       "question": {
         "x": 969,
@@ -809,6 +833,6 @@
   },
   "_id": "未命名5",
   "name": "未命名5",
-  "savedAt": 1786688718456,
+  "savedAt": 1786725452501,
   "savedBy": "hsjsq_wkh_ysgws_08856012"
 }
