@@ -1,8 +1,86 @@
 {
-  "modelConfigs": [],
-  "activeModelConfig": 0,
-  "chatModel": "qwen3.5-plus",
-  "selectedSkills": [],
+  "modelConfigs": [
+    {
+      "name": "oiapi 智谱免费",
+      "apiUrl": "https://oiapi.net/api/BigModel",
+      "apiKey": "",
+      "model": "",
+      "format": "post",
+      "toolCalling": "text",
+      "memoryMode": "session_id",
+      "sessionId": "",
+      "fieldMap": {
+        "message": "message",
+        "system": "system",
+        "sessionId": "id",
+        "clearCache": "cache",
+        "model": "model",
+        "apiKey": "auth"
+      },
+      "clearCacheValue": "1",
+      "responsePath": "$.data[-1].content",
+      "systemPrompt": "",
+      "temperature": 0.7,
+      "maxTokens": 4096
+    },
+    {
+      "name": "OpenAI 兼容",
+      "apiUrl": "https://api.openai.com/v1/chat/completions",
+      "apiKey": "",
+      "model": "gpt-3.5-turbo",
+      "format": "openai",
+      "toolCalling": "text",
+      "memoryMode": "context",
+      "sessionId": "",
+      "fieldMap": {
+        "message": "messages",
+        "system": "messages",
+        "sessionId": "",
+        "clearCache": "",
+        "model": "model",
+        "apiKey": "Authorization"
+      },
+      "clearCacheValue": "",
+      "responsePath": "$.choices[0].message.content",
+      "systemPrompt": "你是一个有帮助的AI助手。",
+      "temperature": 0.7,
+      "maxTokens": 4096
+    },
+    {
+      "name": "云智API",
+      "apiUrl": "https://yunzhiapi.cn/v1/chat/completions",
+      "apiKey": "sk-44rIxgHT1HBdjVaI9GyseZmLagQCvFLj5AgS3YVAFIpG7ZR1",
+      "model": "Gpt-5.6-Terra",
+      "format": "openai",
+      "toolCalling": "text",
+      "memoryMode": "context",
+      "sessionId": "",
+      "fieldMap": {
+        "message": "messages",
+        "system": "messages",
+        "sessionId": "",
+        "clearCache": "",
+        "model": "model",
+        "apiKey": "Authorization"
+      },
+      "clearCacheValue": "",
+      "responsePath": "$.choices[0].message.content",
+      "systemPrompt": "你是一个有帮助的AI助手。",
+      "temperature": 0.7,
+      "maxTokens": 4096
+    }
+  ],
+  "activeModelConfig": 2,
+  "activeToolModelConfig": 0,
+  "chatModel": "Gpt-5.6-Terra",
+  "selectedSkills": [
+    "读取文件",
+    "写入文件",
+    "列出文件",
+    "获取当前时间",
+    "步骤计划管理"
+  ],
   "aiRules": "",
-  "toolModelRules": ""
+  "toolModelRules": "",
+  "workspacePath": ""
 }
