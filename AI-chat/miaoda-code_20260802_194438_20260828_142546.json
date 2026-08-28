@@ -1,0 +1,697 @@
+[
+    {
+        "type": "function",
+        "function": {
+            "name": "set_unit",
+            "description": "设置数轴单位长度（每个大格代表的数值），示例：set unit 2",
+            "parameters": {
+                "type": "object",
+                "required": ["value"],
+                "properties": {
+                    "value": {
+                        "type": "number",
+                        "description": "数轴单位长度数值"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "set_grid",
+            "description": "设置网格密度（像素/单位长度），示例：set grid 5",
+            "parameters": {
+                "type": "object",
+                "required": ["value"],
+                "properties": {
+                    "value": {
+                        "type": "number",
+                        "description": "网格密度数值"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "set_minor",
+            "description": "设置每个大格内的小网格细分数，限定整数2~10，示例：set minor 4",
+            "parameters": {
+                "type": "object",
+                "required": ["num"],
+                "properties": {
+                    "num": {
+                        "type": "integer",
+                        "minimum": 2,
+                        "maximum": 10,
+                        "description": "细分数量，2到10之间整数"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "set_pointsize",
+            "description": "设置坐标点显示的半径大小，限定整数1~20，示例：set pointsize 6",
+            "parameters": {
+                "type": "object",
+                "required": ["size"],
+                "properties": {
+                    "size": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 20,
+                        "description": "坐标点半径大小"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "set_precision",
+            "description": "设置函数曲线采样步长，范围0.001~0.1，数值越小曲线越精细，示例：set precision 0.005",
+            "parameters": {
+                "type": "object",
+                "required": ["step"],
+                "properties": {
+                    "step": {
+                        "type": "number",
+                        "minimum": 0.001,
+                        "maximum": 0.1,
+                        "description": "曲线采样步长"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "set_decimals",
+            "description": "设置坐标轴标签、坐标值显示小数位数，整数0~13，示例：set decimals 3",
+            "parameters": {
+                "type": "object",
+                "required": ["count"],
+                "properties": {
+                    "count": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 13,
+                        "description": "保留小数位数"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "set_majorcolor",
+            "description": "设置主网格线颜色，传入十六进制色值#RRGGBB，示例：set majorcolor #ff0000",
+            "parameters": {
+                "type": "object",
+                "required": ["color"],
+                "properties": {
+                    "color": {
+                        "type": "string",
+                        "description": "十六进制颜色代码，格式#xxxxxx"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "set_minorcolor",
+            "description": "设置细分网格线颜色，传入十六进制色值#RRGGBB，示例：set minorcolor #00ff00",
+            "parameters": {
+                "type": "object",
+                "required": ["color"],
+                "properties": {
+                    "color": {
+                        "type": "string",
+                        "description": "十六进制颜色代码，格式#xxxxxx"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "show_grid",
+            "description": "显示或隐藏主网格，参数仅支持on/off，示例：show grid off",
+            "parameters": {
+                "type": "object",
+                "required": ["mode"],
+                "properties": {
+                    "mode": {
+                        "type": "string",
+                        "enum": ["on", "off"],
+                        "description": "on开启主网格，off关闭主网格"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "show_minor",
+            "description": "显示或隐藏细分小网格，参数仅支持on/off，示例：show minor on",
+            "parameters": {
+                "type": "object",
+                "required": ["mode"],
+                "properties": {
+                    "mode": {
+                        "type": "string",
+                        "enum": ["on", "off"],
+                        "description": "on开启细分网格，off关闭细分网格"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "show_xaxis",
+            "description": "显示或隐藏X坐标轴，参数仅支持on/off，示例：show xaxis off",
+            "parameters": {
+                "type": "object",
+                "required": ["mode"],
+                "properties": {
+                    "mode": {
+                        "type": "string",
+                        "enum": ["on", "off"],
+                        "description": "on显示X轴，off隐藏X轴"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "show_yaxis",
+            "description": "显示或隐藏Y坐标轴，参数仅支持on/off，示例：show yaxis on",
+            "parameters": {
+                "type": "object",
+                "required": ["mode"],
+                "properties": {
+                    "mode": {
+                        "type": "string",
+                        "enum": ["on", "off"],
+                        "description": "on显示Y轴，off隐藏Y轴"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "reset_view",
+            "description": "将画布视图重置为系统默认状态，无入参",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_function",
+            "description": "添加函数曲线，支持显式y=f(x)、隐式二元方程，支持+-*/^括号，示例：add function y=sin(x)、add function x^2+y^2=1",
+            "parameters": {
+                "type": "object",
+                "required": ["expr"],
+                "properties": {
+                    "expr": {
+                        "type": "string",
+                        "description": "完整数学函数表达式"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_point",
+            "description": "添加坐标点，x、y为坐标数值，label可选大写单个字母标签，不填自动分配，示例：add point 2 3、add point 0 0 O",
+            "parameters": {
+                "type": "object",
+                "required": ["x", "y"],
+                "properties": {
+                    "x": {
+                        "type": "number",
+                        "description": "X坐标数值"
+                    },
+                    "y": {
+                        "type": "number",
+                        "description": "Y坐标数值"
+                    },
+                    "label": {
+                        "type": "string",
+                        "description": "可选，单个大写字母坐标点标签"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_param",
+            "description": "创建可拖动调节参数滑块，参数名小写字母，配置最小值、最大值、步长、初始值，示例：add param a -5 5 0.1 1",
+            "parameters": {
+                "type": "object",
+                "required": ["name", "min", "max", "step", "init"],
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "参数名称，小写单个字母"
+                    },
+                    "min": {
+                        "type": "number",
+                        "description": "取值下限"
+                    },
+                    "max": {
+                        "type": "number",
+                        "description": "取值上限"
+                    },
+                    "step": {
+                        "type": "number",
+                        "description": "滑动调节步长"
+                    },
+                    "init": {
+                        "type": "number",
+                        "description": "初始默认数值"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_segment",
+            "description": "连接两个已有坐标点绘制线段，传入两点大写标签，示例：add segment A B",
+            "parameters": {
+                "type": "object",
+                "required": ["pointA", "pointB"],
+                "properties": {
+                    "pointA": {
+                        "type": "string",
+                        "description": "起点大写标签"
+                    },
+                    "pointB": {
+                        "type": "string",
+                        "description": "终点大写标签"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_line",
+            "description": "绘制经过两个坐标点的无限直线，传入两点大写标签，示例：add line A B",
+            "parameters": {
+                "type": "object",
+                "required": ["pointA", "pointB"],
+                "properties": {
+                    "pointA": {
+                        "type": "string",
+                        "description": "参考点A大写标签"
+                    },
+                    "pointB": {
+                        "type": "string",
+                        "description": "参考点B大写标签"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_ray",
+            "description": "绘制射线，从pointA出发经过pointB无限延伸，传入两点大写标签，示例：add ray A B",
+            "parameters": {
+                "type": "object",
+                "required": ["pointA", "pointB"],
+                "properties": {
+                    "pointA": {
+                        "type": "string",
+                        "description": "射线起点大写标签"
+                    },
+                    "pointB": {
+                        "type": "string",
+                        "description": "射线途经点大写标签"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "delete_item",
+            "description": "删除画布内指定项目，自动处理依赖，传入项目唯一ID，示例：delete fx_1",
+            "parameters": {
+                "type": "object",
+                "required": ["itemId"],
+                "properties": {
+                    "itemId": {
+                        "type": "string",
+                        "description": "目标项目唯一ID"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "hide_item",
+            "description": "隐藏指定项目，项目保留在数据列表仅画布不渲染，示例：hide xy_1",
+            "parameters": {
+                "type": "object",
+                "required": ["itemId"],
+                "properties": {
+                    "itemId": {
+                        "type": "string",
+                        "description": "目标项目唯一ID"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "showitem_item",
+            "description": "恢复显示被隐藏的项目，传入项目ID，示例：showitem xy_1",
+            "parameters": {
+                "type": "object",
+                "required": ["itemId"],
+                "properties": {
+                    "itemId": {
+                        "type": "string",
+                        "description": "已隐藏项目唯一ID"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "setcolor_item",
+            "description": "修改指定项目的绘制颜色，项目ID+十六进制色值，示例：setcolor fx_1 #00aaff",
+            "parameters": {
+                "type": "object",
+                "required": ["itemId", "color"],
+                "properties": {
+                    "itemId": {
+                        "type": "string",
+                        "description": "目标项目唯一ID"
+                    },
+                    "color": {
+                        "type": "string",
+                        "description": "十六进制颜色代码#xxxxxx"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "setlabel_item",
+            "description": "修改坐标点、连线的展示标签，单个大写字母，示例：setlabel xy_1 C",
+            "parameters": {
+                "type": "object",
+                "required": ["itemId", "newLabel"],
+                "properties": {
+                    "itemId": {
+                        "type": "string",
+                        "description": "目标项目唯一ID"
+                    },
+                    "newLabel": {
+                        "type": "string",
+                        "description": "新标签，单个大写英文字母"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "clear_all",
+            "description": "一键清空画布内所有绘制项目，无二次确认，谨慎调用，无入参",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_project_data",
+            "description": "获取函数绘制器当前全部项目数据（所有函数表达式、坐标点、参数滑块、线段/直线/射线及其数值与隐藏状态），以 JSON 文本形式返回，用于 AI 判断当前画布内容",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_knowledge_base",
+            "description": "获取函数绘制器知识库内容（使用说明与绘图技巧）。注意：知识库功能尚在建设中，当前返回内容可能为空",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_parametric",
+            "description": "添加参数方程曲线，x(t)和y(t)为关于t的表达式，可选tMin和tMax参数范围，示例：add parametric cos(t) sin(t) 0 6.28",
+            "parameters": {
+                "type": "object",
+                "required": ["xExpr", "yExpr"],
+                "properties": {
+                    "xExpr": {
+                        "type": "string",
+                        "description": "x(t) 表达式，关于参数t的函数"
+                    },
+                    "yExpr": {
+                        "type": "string",
+                        "description": "y(t) 表达式，关于参数t的函数"
+                    },
+                    "tMin": {
+                        "type": "number",
+                        "description": "可选，参数t的下限，默认0"
+                    },
+                    "tMax": {
+                        "type": "number",
+                        "description": "可选，参数t的上限，默认6.28"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_polar",
+            "description": "添加极坐标曲线，r(θ)为关于角度的表达式，可选thetaMin和thetaMax范围，示例：add polar 1+cos(t) 0 6.28",
+            "parameters": {
+                "type": "object",
+                "required": ["expr"],
+                "properties": {
+                    "expr": {
+                        "type": "string",
+                        "description": "r(θ) 极径表达式，关于角度参数的函数"
+                    },
+                    "thetaMin": {
+                        "type": "number",
+                        "description": "可选，角度下限，默认0"
+                    },
+                    "thetaMax": {
+                        "type": "number",
+                        "description": "可选，角度上限，默认6.28"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_inequality",
+            "description": "添加不等式区域填充，expr为函数表达式，op可选> >= < <=，默认>，示例：add inequality x^2 >、add inequality sin(x) <=",
+            "parameters": {
+                "type": "object",
+                "required": ["expr"],
+                "properties": {
+                    "expr": {
+                        "type": "string",
+                        "description": "函数表达式，即不等式右侧的f(x)"
+                    },
+                    "op": {
+                        "type": "string",
+                        "enum": [">", ">=", "<", "<="],
+                        "description": "可选，不等式操作符，默认>"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_derivative",
+            "description": "添加函数的导数曲线，srcFuncId为源函数的项目ID，order为导数阶数默认1，示例：add derivative fx_1 1",
+            "parameters": {
+                "type": "object",
+                "required": ["srcFuncId"],
+                "properties": {
+                    "srcFuncId": {
+                        "type": "string",
+                        "description": "源函数的项目唯一ID（必须是function类型）"
+                    },
+                    "order": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 5,
+                        "description": "可选，导数阶数，默认1"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_integral",
+            "description": "添加定积分区域填充，srcFuncId为源函数ID，xLower和xUpper为积分上下限，示例：add integral fx_1 0 1",
+            "parameters": {
+                "type": "object",
+                "required": ["srcFuncId", "xLower", "xUpper"],
+                "properties": {
+                    "srcFuncId": {
+                        "type": "string",
+                        "description": "源函数的项目唯一ID（必须是function类型）"
+                    },
+                    "xLower": {
+                        "type": "number",
+                        "description": "积分下限"
+                    },
+                    "xUpper": {
+                        "type": "number",
+                        "description": "积分上限"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_text",
+            "description": "添加文本注释，x和y为坐标，后面为文本内容（可含空格），示例：add text 0 0 你好世界",
+            "parameters": {
+                "type": "object",
+                "required": ["x", "y", "text"],
+                "properties": {
+                    "x": {
+                        "type": "number",
+                        "description": "文本X坐标"
+                    },
+                    "y": {
+                        "type": "number",
+                        "description": "文本Y坐标"
+                    },
+                    "text": {
+                        "type": "string",
+                        "description": "文本注释内容"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_circle",
+            "description": "添加圆，cx和cy为圆心坐标，r为半径，示例：add circle 0 0 3",
+            "parameters": {
+                "type": "object",
+                "required": ["cx", "cy", "r"],
+                "properties": {
+                    "cx": {
+                        "type": "number",
+                        "description": "圆心X坐标"
+                    },
+                    "cy": {
+                        "type": "number",
+                        "description": "圆心Y坐标"
+                    },
+                    "r": {
+                        "type": "number",
+                        "description": "圆的半径"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_table",
+            "description": "添加表格数据点并自动拟合，传入成对的x y坐标（至少2对），默认线性拟合，示例：add table 0 0 1 1 2 4 3 9",
+            "parameters": {
+                "type": "object",
+                "required": ["points"],
+                "properties": {
+                    "points": {
+                        "type": "array",
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            },
+                            "minItems": 2,
+                            "maxItems": 2
+                        },
+                        "minItems": 2,
+                        "description": "坐标点数组，每个元素为[x, y]对，至少2对"
+                    }
+                }
+            }
+        }
+    }
+]
