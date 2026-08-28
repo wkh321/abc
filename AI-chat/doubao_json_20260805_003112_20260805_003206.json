@@ -133,5 +133,45 @@
         "tool_id": 27,
         "name": "get_knowledge_base",
         "desc": "获取函数绘制器知识库内容（使用说明与绘图技巧）。注意：知识库功能尚在建设中，当前返回内容可能为空"
+    },
+    {
+        "tool_id": 28,
+        "name": "add parametric",
+        "desc": "添加参数方程曲线，x(t)和y(t)为关于t的表达式，可选tMin和tMax参数范围，示例：add parametric cos(t) sin(t) 0 6.28"
+    },
+    {
+        "tool_id": 29,
+        "name": "add polar",
+        "desc": "添加极坐标曲线，r(θ)为关于角度的表达式，可选thetaMin和thetaMax范围，示例：add polar 1+cos(t) 0 6.28"
+    },
+    {
+        "tool_id": 30,
+        "name": "add inequality",
+        "desc": "添加不等式区域填充，expr为函数表达式，op可选> >= < <=，默认>，示例：add inequality x^2 >、add inequality sin(x) <="
+    },
+    {
+        "tool_id": 31,
+        "name": "add derivative",
+        "desc": "添加函数的导数曲线，srcFuncId为源函数的项目ID，order为导数阶数默认1，示例：add derivative fx_1 1"
+    },
+    {
+        "tool_id": 32,
+        "name": "add integral",
+        "desc": "添加定积分区域填充，srcFuncId为源函数ID，xLower和xUpper为积分上下限，示例：add integral fx_1 0 1"
+    },
+    {
+        "tool_id": 33,
+        "name": "add text",
+        "desc": "添加文本注释，x和y为坐标，后面为文本内容（可含空格），示例：add text 0 0 你好世界"
+    },
+    {
+        "tool_id": 34,
+        "name": "add circle",
+        "desc": "添加圆，cx和cy为圆心坐标，r为半径，示例：add circle 0 0 3"
+    },
+    {
+        "tool_id": 35,
+        "name": "add table",
+        "desc": "添加表格数据点并自动拟合，传入成对的x y坐标（至少2对），默认线性拟合，示例：add table 0 0 1 1 2 4 3 9"
     }
 ]
