@@ -35,17 +35,19 @@
     },
     {
         "type": "function",
-        "name": "set_minor",
-        "description": "设置每个大格内的小网格细分数，限定整数2~10，示例：set minor 4",
-        "parameters": {
-            "type": "object",
-            "required": ["num"],
-            "properties": {
-                "num": {
-                    "type": "integer",
-                    "minimum": 2,
-                    "maximum": 10,
-                    "description": "细分数量，2到10之间整数"
+        "function": {
+            "name": "set_minor",
+            "description": "设置每个大格内的小网格细分数，限定整数2~10，示例：set minor 4",
+            "parameters": {
+                "type": "object",
+                "required": ["num"],
+                "properties": {
+                    "num": {
+                        "type": "integer",
+                        "minimum": 2,
+                        "maximum": 10,
+                        "description": "细分数量，2到10之间整数"
+                    }
                 }
             }
         }
@@ -465,6 +467,230 @@
                 "type": "object",
                 "properties": {},
                 "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_project_data",
+            "description": "获取函数绘制器当前全部项目数据（所有函数表达式、坐标点、参数滑块、线段/直线/射线及其数值与隐藏状态），以 JSON 文本形式返回，用于 AI 判断当前画布内容",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_knowledge_base",
+            "description": "获取函数绘制器知识库内容（使用说明与绘图技巧）。注意：知识库功能尚在建设中，当前返回内容可能为空",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_parametric",
+            "description": "添加参数方程曲线，x(t)和y(t)为关于t的表达式，可选tMin和tMax参数范围，示例：add parametric cos(t) sin(t) 0 6.28",
+            "parameters": {
+                "type": "object",
+                "required": ["xExpr", "yExpr"],
+                "properties": {
+                    "xExpr": {
+                        "type": "string",
+                        "description": "x(t) 表达式，关于参数t的函数"
+                    },
+                    "yExpr": {
+                        "type": "string",
+                        "description": "y(t) 表达式，关于参数t的函数"
+                    },
+                    "tMin": {
+                        "type": "number",
+                        "description": "可选，参数t的下限，默认0"
+                    },
+                    "tMax": {
+                        "type": "number",
+                        "description": "可选，参数t的上限，默认6.28"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_polar",
+            "description": "添加极坐标曲线，r(θ)为关于角度的表达式，可选thetaMin和thetaMax范围，示例：add polar 1+cos(t) 0 6.28",
+            "parameters": {
+                "type": "object",
+                "required": ["expr"],
+                "properties": {
+                    "expr": {
+                        "type": "string",
+                        "description": "r(θ) 极径表达式，关于角度参数的函数"
+                    },
+                    "thetaMin": {
+                        "type": "number",
+                        "description": "可选，角度下限，默认0"
+                    },
+                    "thetaMax": {
+                        "type": "number",
+                        "description": "可选，角度上限，默认6.28"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_inequality",
+            "description": "添加不等式区域填充，expr为函数表达式，op可选> >= < <=，默认>，示例：add inequality x^2 >、add inequality sin(x) <=",
+            "parameters": {
+                "type": "object",
+                "required": ["expr"],
+                "properties": {
+                    "expr": {
+                        "type": "string",
+                        "description": "函数表达式，即不等式右侧的f(x)"
+                    },
+                    "op": {
+                        "type": "string",
+                        "enum": [">", ">=", "<", "<="],
+                        "description": "可选，不等式操作符，默认>"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_derivative",
+            "description": "添加函数的导数曲线，srcFuncId为源函数的项目ID，order为导数阶数默认1，示例：add derivative fx_1 1",
+            "parameters": {
+                "type": "object",
+                "required": ["srcFuncId"],
+                "properties": {
+                    "srcFuncId": {
+                        "type": "string",
+                        "description": "源函数的项目唯一ID（必须是function类型）"
+                    },
+                    "order": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 5,
+                        "description": "可选，导数阶数，默认1"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_integral",
+            "description": "添加定积分区域填充，srcFuncId为源函数ID，xLower和xUpper为积分上下限，示例：add integral fx_1 0 1",
+            "parameters": {
+                "type": "object",
+                "required": ["srcFuncId", "xLower", "xUpper"],
+                "properties": {
+                    "srcFuncId": {
+                        "type": "string",
+                        "description": "源函数的项目唯一ID（必须是function类型）"
+                    },
+                    "xLower": {
+                        "type": "number",
+                        "description": "积分下限"
+                    },
+                    "xUpper": {
+                        "type": "number",
+                        "description": "积分上限"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_text",
+            "description": "添加文本注释，x和y为坐标，后面为文本内容（可含空格），示例：add text 0 0 你好世界",
+            "parameters": {
+                "type": "object",
+                "required": ["x", "y", "text"],
+                "properties": {
+                    "x": {
+                        "type": "number",
+                        "description": "文本X坐标"
+                    },
+                    "y": {
+                        "type": "number",
+                        "description": "文本Y坐标"
+                    },
+                    "text": {
+                        "type": "string",
+                        "description": "文本注释内容"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_circle",
+            "description": "添加圆，cx和cy为圆心坐标，r为半径，示例：add circle 0 0 3",
+            "parameters": {
+                "type": "object",
+                "required": ["cx", "cy", "r"],
+                "properties": {
+                    "cx": {
+                        "type": "number",
+                        "description": "圆心X坐标"
+                    },
+                    "cy": {
+                        "type": "number",
+                        "description": "圆心Y坐标"
+                    },
+                    "r": {
+                        "type": "number",
+                        "description": "圆的半径"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_table",
+            "description": "添加表格数据点并自动拟合，传入成对的x y坐标（至少2对），默认线性拟合，示例：add table 0 0 1 1 2 4 3 9",
+            "parameters": {
+                "type": "object",
+                "required": ["points"],
+                "properties": {
+                    "points": {
+                        "type": "array",
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            },
+                            "minItems": 2,
+                            "maxItems": 2
+                        },
+                        "minItems": 2,
+                        "description": "坐标点数组，每个元素为[x, y]对，至少2对"
+                    }
+                }
             }
         }
     }
